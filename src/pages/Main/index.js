@@ -24,8 +24,6 @@ export default class Main extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
-
-    console.log(this.state.text);
   };
 
   render() {
