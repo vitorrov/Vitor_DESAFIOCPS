@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import logo from '../../assets/img/logo.png';
 
+import api from '../../services/api';
+
 import { Container, Textarea, Form, SubmitButton } from './styles';
 
 export default class Main extends Component {
@@ -22,8 +24,18 @@ export default class Main extends Component {
     this.setState({ text: event.target.value });
   };
 
-  handleSubmit = event => {
-    event.preventDefault();
+  handleSubmit = async event => {
+    // event.preventDefault();
+
+    const { name, email, text } = this.state;
+
+    const response = await api.post('/', {
+      name,
+      email,
+      text,
+    });
+
+    console.log(response.data);
   };
 
   render() {

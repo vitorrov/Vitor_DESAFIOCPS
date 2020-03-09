@@ -13,7 +13,7 @@ html, body, #root {
 }
 
 body {
-  background: #349beb;
+  background-image: linear-gradient(#61E7FB, #0173A9);
   -webkit-font-smoothing: antialiased !important;
 }
 
