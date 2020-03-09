@@ -1,4 +1,4 @@
 const Route = use('Route');
 
 Route.get('/listcontacts', 'ContactController.index');
-Route.post('/', 'ContactController.store');
+Route.post('/contactus', 'ContactController.store');

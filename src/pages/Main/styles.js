@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+  @import url('https://fonts.googleapis.com/css?family=Spartan:400,700&display=swap');
   max-width: 700px;
   background: #fff;
   border-radius: 4px;
@@ -21,6 +22,7 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;
+    font-family: 'Spartan', sans-serif;
   }
 
   p {
@@ -30,6 +32,7 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
     margin-top: 10px;
+    font-family: 'Spartan', sans-serif;
   }
 `;
 

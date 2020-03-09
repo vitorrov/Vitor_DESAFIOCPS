@@ -29,7 +29,7 @@ export default class Main extends Component {
 
     const { name, email, text } = this.state;
 
-    const response = await api.post('/', {
+    const response = await api.post('/contactus', {
       name,
       email,
       text,
